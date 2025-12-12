@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:wght@500&display=swap');
+
+
+
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+.slick-next::before,
+.slick-prev::before {
+  color: #1f2937 !important; 
+  font-size: 26px !important;
+  opacity: 1 !important;
+}
+
+
+.dark .slick-next::before,
+.dark .slick-prev::before {
+  color: #ffffff !important; 
+}
+
+
+ul.slick-dots li button::before {
+  font-size: 12px !important;
+  color: #1f2937 !important; /* gray-800 */
+  opacity: 1 !important;
+}
+
+/* DARK MODE */
+.dark ul.slick-dots li button::before {
+  color: #ffffff !important; /* white in dark mode */
+}
